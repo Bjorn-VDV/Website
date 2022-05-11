@@ -1,14 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="../js/addingImg.js" defer></script>
     <link rel="stylesheet" href="../css/Base.css">
+
 </head>
+<style>
+    .row {
+        padding-left: 50px;
+        width: 95%;
+        height: 80%;
+    }
+
+    .column {
+        float: left;
+        position: relative;
+        width: 20%;
+        min-width: 150px;
+        padding-top: 10px;
+        padding-right: 10px;
+        height: 60%;
+    }
+    .columnMid {
+        float: left;
+        position: relative;
+        width: 20%;
+        min-width: 150px;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-left: 10%;
+        height: 60%;
+    }
+</style>
+
 <body>
-    
+    <div class="scroll" style="overflow-y:scroll; overflow-x: hidden; height:90%">
+        <div class="row">
+            <div class="column">
+            </div>
+            <div class="column">
+            </div>
+            <div class="columnMid">
+            </div>
+            <div class="column">
+            </div>
+           
+            <script>
+                function addingImgs()
+                {
+                    var array = [
+                    "<h2>Coffee <span>£2.50</span></h2>",
+                    "<h2>Espresso <span>£3.00</span></h2>",
+                    "<h2>Latte or Mocha <span>£2.50</span></h2>",
+                    "<h2>Chai Latte <span>£3.50</span></h2>",
+                    "<h2>Capuccino <span>£3.00</span></h2>",
+                    "<h2>Pumpkin Spice Latte <span>£3.70</span></h2>",
+                    "<h2>Soviet Coffee <span>£5.20</span></h2>",
+                    "<h2>Irish Coffee <span>£5.20</span></h2>"];
+
+                    for (var i = 0; i <= 3; i++) 
+                    {
+                        var img = document.createElement("img");
+                        var img2 = document.createElement("img");
+                        var img3 = document.createElement("img");
+                        var img4 = document.createElement("img");
+
+                        img.src = "../Images/Kaffe.jpg";
+                        img2.src = img.src;
+                        img3.src = "../Images/Scones.jpg";
+                        img4.src = img3.src;
+
+                        img.style = "width:100%; height: 70%; object-fit: cover;border: 2px groove #7B5037";
+                        img2.style = "width:100%; height: 70%; object-fit: cover;border: 2px groove #7B5037";
+                        img3.style = "width:100%; height: 70%; object-fit: cover;border: 2px groove #7B5037";
+                        img4.style = "width:100%; height: 70%; object-fit: cover;border: 2px groove #7B5037";
+
+                        document.getElementsByClassName("column")[0].innerHTML += array[i];
+                        document.getElementsByClassName("column")[0].appendChild(img);
+
+                        document.getElementsByClassName("column")[1].innerHTML += array[i+4];
+                        document.getElementsByClassName("column")[1].appendChild(img2);
+                        
+                        document.getElementsByClassName("columnMid")[0].innerHTML += array[i+4];
+                        document.getElementsByClassName("columnMid")[0].appendChild(img3);
+
+                        document.getElementsByClassName("column")[2].innerHTML += array[i+4];
+                        document.getElementsByClassName("column")[2].appendChild(img4);
+                    }
+                }
+                addingImgs();
+            </script>
+
+
+
+
+
+
+
+        </div>
 </body>
-<footer><a href="../index.html">>>HOME<<</a></footer>
+<footer><a href="../index.html">>>HOME<<< </a>
+</footer>
+
 </html>
