@@ -33,7 +33,8 @@ function footerRepeat()
     //         <img src="../Images/instaLogo.jpg" alt="Instagram Logo" style="width: 12%; height: 12%;min-width: 25px;">
     //         Instagram!</a>
     result += "<div class='dropdown;positionSticker'><button onclick='menuButton()' class='dropbtn'>MENU</button><div id='myDropdown' class='dropdown-content'>" + 
-        "<a href='../index.html'>HOME</a><a href='../html/About.html'>ABOUT</a>" + 
+        "<a href='https://bjorn-vdv.github.io/Website/index.html'>HOME</a>" +
+        "<a href='../html/About.html'>ABOUT</a>" + 
         "<a href='../html/Products.html'>PRODUCTS</a>" +
         "<a href='../html/Contact.html'>CONTACT</a>" +     
         "</div></div>"
