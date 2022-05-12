@@ -16,6 +16,7 @@ h1 {
     color: #7B5037;
     -webkit-text-stroke: 1px black;
     font-size: 50px;
+    display: inline-block;
     line-height: 40%;
     font-family: fantasy;
     text-align: center;
@@ -67,6 +68,10 @@ li {
     -webkit-text-stroke: 0.5 #79c5f1;
     text-shadow: -2px 2px 2px black;
     margin-bottom: 25px;
+    line-height:125%;
+    position:relative;
+    bottom: 40%;
+    inline-size: 100%;
 }
 
 footer {
@@ -98,8 +103,8 @@ a:hover {
     font-weight: bold;
     text-decoration: underline overline;
     display: inline-block;
-    height: inherit;
-    font-size: larger;
+    height: inherit;    
+    color: #b3a1d3;
     position: flex;
 }
 
