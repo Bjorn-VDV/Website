@@ -20,6 +20,8 @@ h1 {
     line-height: 40%;
     font-family: fantasy;
     text-align: center;
+    text-decoration: underline;
+    width: 100%;
     text-shadow: -2px 2px 2px black;
 
 }
